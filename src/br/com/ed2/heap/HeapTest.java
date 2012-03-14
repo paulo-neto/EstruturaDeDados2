@@ -6,7 +6,8 @@ public class HeapTest {
 
         int [] v = new int[] {23,17,14,6,13,10,15,7,12};
         Heap heap = new Heap(v);
-        heap.buildMaxHeap();
+        //System.out.println(heap.getComp());
+        //heap.buildMaxHeap();
        //heap.maxHeapFY(4);
         for(int i=0;i<v.length;i++){
             System.out.print(v[i] + ", ");

@@ -7,11 +7,9 @@ public class Heap {
     int maior;
 
     public Heap(int [] h){        
-//        maior = 0;
     	heap = h;
         comp = h.length;
         this.tam = comp;
-//        buildMaxHeap(h);
     }
     
     public void set(int pos, int valor){
@@ -24,6 +22,9 @@ public class Heap {
     
     }
     
+    public int getComp(){
+    	return this.comp;
+    }
     
 
     public void maxHeapFY(int i){
@@ -45,9 +46,6 @@ public class Heap {
             this.set(maior, temp);
             maxHeapFY( maior);
         }
-
-
-        //this.heap = h;
     }
 
     public int [] getVetor(){
@@ -60,5 +58,7 @@ public class Heap {
             maxHeapFY(t);
         }
     }
+    
+
     
 }
