@@ -4,7 +4,6 @@ public class FilaPrioridade extends HeapBinario {
 	
 	public FilaPrioridade(int n) {
 		super(n);
-		// TODO Auto-generated constructor stub
 	}
 	
 	public int heapMaximum(){
