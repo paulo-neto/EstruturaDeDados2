@@ -39,20 +39,18 @@ public class Teste {
 		System.out.println(aux);
 		System.out.println("\n--------------------------------------------\n");
 
-		
-		int chave = 2;
-		int valor = 16;
-		System.out.println("Colocando na "+chave+" posição o valor "+valor+" :\n");
-		fp.heapIncreaseKey(chave,valor);
+
+		System.out.println("Colocando na 2ª posição o valor 16 :\n");
+		fp.heapIncreaseKey(2, 16);
 		aux = "";
 		for (int i = 1; i <= fp.tamanho_heap; i++)
 			aux += "[" + fp.e[i] + "]" + " ";
 		System.out.println(aux);
 		System.out.println("\n--------------------------------------------\n");
-		
-		valor = 11;
-		System.out.println("Inserindo um novo valor "+valor+" :\n");
-		fp.maxHeapInsert(valor);
+
+
+		System.out.println("Inserindo um novo folha com valor 11 :\n");
+		fp.maxHeapInsert(11);
 		aux = "";
 		for (int i = 1; i <= fp.tamanho_heap; i++)
 			aux += "[" + fp.e[i] + "]" + " ";
