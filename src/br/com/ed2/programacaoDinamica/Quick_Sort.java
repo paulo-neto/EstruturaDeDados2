@@ -14,8 +14,7 @@ public class Quick_Sort {
 		
 		
 		// BASE: Verifica se o elemento do meio contém o valor que se está procurando.
-		if (umVetor[meio] == valor)
-			return true;		
+		if (umVetor[meio] == valor)return true;		
 		
 		//	CONQUISTA: Verifica se o valor procurado está a direita ou esquerda do vetor, ou seja, se o valor do 
 		//  meio for maior do que o procurado, então, chama recursivo do início até o (meio - 1), caso contrário, chama 	
@@ -160,13 +159,6 @@ public class Quick_Sort {
 		}
 		System.out.println("Vetor = "+aux);
 		
-//		System.out.print("Vetor = [");
-//		for (int i = 0; i < v.length; i++) {
-//			System.out.print(v[i]);
-//			if ((i + 1) < v.length)
-//				System.out.print(", ");
-//			
-//		}
-//		System.out.println("]");		
+		
 	}
 }

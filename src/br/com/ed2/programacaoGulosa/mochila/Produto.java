@@ -3,11 +3,15 @@ public class Produto {
  double peso;
  double valor;
  double quant;
+ double razao;
  
- public Produto(int umPeso, int umValor){
+ public Produto(int umValor, int umPeso){
 	 this.peso = umPeso;
 	 this.valor = umValor;
+	 this.razao = this.valor/this.peso;
  }
+ 
+ public Produto(){}
 
 public double getPeso() {
 	return peso;
@@ -32,6 +36,15 @@ public double getQuant() {
 public void setQuant(double quant) {
 	this.quant = quant;
 }
+
+public double getRazao() {
+	return razao;
+}
+
+public void setRazao(double razao) {
+	this.razao = razao;
+}
+
  
  
  

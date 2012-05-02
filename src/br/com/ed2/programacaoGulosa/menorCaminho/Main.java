@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 public class Main {
 
 	
-	Mapa mapa;
+	Mapa mapa = new Mapa(4);
 	
 	
 	public static void main(String[] args) {
@@ -28,13 +28,13 @@ public class Main {
 		
 		System.out.println("\n\n********  Solução para 4 cidades (Método Guloso) ********");
 		long time = System.currentTimeMillis();		
-		System.out.println(main.mapa.getSolucaoGulosa(0));
+		System.out.println(main.mapa.getSolucaoGulosa(4));
 		System.out.println("Tempo: " + ((System.currentTimeMillis() - time)/1000) + " segundos");
 		System.out.println("****************************************************************");
 		
 		System.out.println("\n\n********  Solução para 4 cidades (Método totalmente aleatório) ********");
 		time = System.currentTimeMillis();		
-		System.out.println(main.mapa.getSolucaoAleatoria(0));
+		System.out.println(main.mapa.getSolucaoAleatoria(4));
 		System.out.println("Tempo: " + ((System.currentTimeMillis() - time)/1000) + " segundos");
 		System.out.println("******************************************************************************");
 		
@@ -49,13 +49,13 @@ public class Main {
 		
 		System.out.println("\n\n********  Solução para 177 cidades (Método Guloso) ********");
 		time = System.currentTimeMillis();		
-		System.out.println(main.mapa.getSolucaoGulosa(0));
+		System.out.println(main.mapa.getSolucaoGulosa(4));
 		System.out.println("Tempo: " + ((System.currentTimeMillis() - time)/1000) + " segundos");
 		System.out.println("****************************************************************");
 		
 		System.out.println("\n\n********  Solução para 177 cidades (Método totalmente aleatório) ********");
 		time = System.currentTimeMillis();		
-		System.out.println(main.mapa.getSolucaoAleatoria(0));
+		System.out.println(main.mapa.getSolucaoAleatoria(4));
 		System.out.println("Tempo: " + ((System.currentTimeMillis() - time)/1000) + " segundos");
 		System.out.println("******************************************************************************");
 		
